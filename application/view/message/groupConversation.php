@@ -372,11 +372,11 @@
 }
 
 .chat-message.message-mine {
-    justify-content: flex-start;
+    justify-content: flex-end;
 }
 
 .chat-message.message-theirs {
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .message-bubble {
@@ -387,15 +387,15 @@
 }
 
 .message-mine .message-bubble {
-    background: white;
-    color: #24292e;
-    border-bottom-left-radius: 4px;
-}
-
-.message-theirs .message-bubble {
     background: #0366d6;
     color: white;
     border-bottom-right-radius: 4px;
+}
+
+.message-theirs .message-bubble {
+    background: white;
+    color: #24292e;
+    border-bottom-left-radius: 4px;
 }
 
 .message-sender-name {
