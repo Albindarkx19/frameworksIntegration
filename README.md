@@ -1,3 +1,16 @@
+# HelloWorld
+
+**Author:** Albin
+
+**LBS Eibiswald | 3aAPC**
+
+Dies ist eine einfache Demo-Anwendung, die grundlegende Konzepte der Softwareentwicklung mit PHP veranschaulicht.
+Sie dient als Beispielprojekt für Best Practices und kann leicht erweitert oder an eigene Anforderungen angepasst werden.
+
+Das Ziel dieser Anwendung ist es, sowohl Einsteigern als auch fortgeschrittenen Entwicklern eine klare und verständliche Grundlage für ihre eigenen PHP-Projekte zu bieten.
+
+---
+
 # HUGE - PHP User Authentication & Messaging System
 
 Ein vollständiges User Authentication System mit integriertem Messaging-System und Gruppenchat-Funktionalität.
