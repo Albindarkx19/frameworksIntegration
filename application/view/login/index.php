@@ -32,6 +32,14 @@
 							3. http://stackoverflow.com/questions/13667437/how-to-add-csrf-token-to-login-form?lq=1
 					-->
 					<input type="hidden" name="csrf_token" value="<?= Csrf::makeToken(); ?>" />
+
+                    <!-- Google reCAPTCHA -->
+                    <?php if (Recaptcha::isEnabled()) { ?>
+                        <div class="recaptcha-wrapper">
+                            <?= Recaptcha::render(); ?>
+                        </div>
+                    <?php } ?>
+
                     <input type="submit" class="login-submit-button" value="Log in"/>
                 </form>
                 <div class="link-forgot-my-password">

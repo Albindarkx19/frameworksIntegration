@@ -42,6 +42,20 @@ class LoginController extends Controller
             exit();
         }
 
+        // check reCAPTCHA if enabled
+        if (Recaptcha::isEnabled()) {
+            $recaptcha_response = Request::post('g-recaptcha-response');
+            if (!Recaptcha::verify($recaptcha_response)) {
+                // reCAPTCHA verification failed, redirect back to login
+                if (Request::post('redirect')) {
+                    Redirect::to('login?redirect=' . ltrim(urlencode(Request::post('redirect')), '/'));
+                } else {
+                    Redirect::to('login/index');
+                }
+                return;
+            }
+        }
+
         // perform the login method, put result (true or false) into $login_successful
         $login_successful = LoginModel::login(
             Request::post('user_name'), Request::post('user_password'), Request::post('set_remember_me_cookie')

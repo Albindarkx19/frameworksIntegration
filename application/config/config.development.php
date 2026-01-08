@@ -76,6 +76,16 @@ return array(
     'CAPTCHA_WIDTH' => 359,
     'CAPTCHA_HEIGHT' => 100,
     /**
+     * Configuration for: Google reCAPTCHA
+     * Get your keys from: https://www.google.com/recaptcha/admin/create
+     * RECAPTCHA_ENABLED: Set to true to enable reCAPTCHA on login
+     * RECAPTCHA_SITE_KEY: Your public site key
+     * RECAPTCHA_SECRET_KEY: Your secret key
+     */
+    'RECAPTCHA_ENABLED' => true,
+    'RECAPTCHA_SITE_KEY' => 'your_site_key_here',
+    'RECAPTCHA_SECRET_KEY' => 'your_secret_key_here',
+    /**
      * Configuration for: Cookies
      * 1209600 seconds = 2 weeks
      * COOKIE_PATH is the path the cookie is valid on, usually "/" to make it valid on the whole domain.
