@@ -2,6 +2,9 @@
     <div class="messages-header">
         <h1>💬 Messages</h1>
         <div class="messages-actions">
+            <a href="<?= Config::get('URL'); ?>foodorder/index" class="btn btn-food-order">
+                🍕 Order Food
+            </a>
             <a href="<?= Config::get('URL'); ?>message/newChat" class="btn btn-new-chat">
                 ➕ New Chat
             </a>
@@ -136,6 +139,16 @@
     font-weight: 600;
     transition: all 0.2s;
     display: inline-block;
+}
+
+.btn-food-order {
+    background: #28a745;
+    color: white;
+}
+
+.btn-food-order:hover {
+    background: #218838;
+    transform: translateY(-2px);
 }
 
 .btn-new-chat {

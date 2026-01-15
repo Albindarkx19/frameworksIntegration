@@ -18,6 +18,6 @@ class Config
             self::$config = require $config_file;
         }
 
-        return self::$config[$key];
+        return isset(self::$config[$key]) ? self::$config[$key] : null;
     }
 }

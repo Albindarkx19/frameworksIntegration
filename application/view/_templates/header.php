@@ -42,6 +42,9 @@
                         ?>
                     </a>
                 </li>
+                <li <?php if (View::checkForActiveController($filename, "foodorder")) { echo ' class="active" '; } ?> >
+                    <a href="<?php echo Config::get('URL'); ?>foodorder/index">Food Orders</a>
+                </li>
             <?php } else { ?>
                 <!-- for not logged in users -->
                 <li <?php if (View::checkForActiveControllerAndAction($filename, "login/index")) { echo ' class="active" '; } ?> >

@@ -83,8 +83,8 @@ return array(
      * RECAPTCHA_SECRET_KEY: Your secret key
      */
     'RECAPTCHA_ENABLED' => true,
-    'RECAPTCHA_SITE_KEY' => 'your_site_key_here',
-    'RECAPTCHA_SECRET_KEY' => 'your_secret_key_here',
+    'RECAPTCHA_SITE_KEY' => '6LfDXkksAAAAAFdC5DHDugy10cMR5oPvSuAkrXRE',
+    'RECAPTCHA_SECRET_KEY' => '6LfDXkksAAAAAIPbdv9lX0vCzgfEXMsmzs4JcLq8',
     /**
      * Configuration for: Cookies
      * 1209600 seconds = 2 weeks

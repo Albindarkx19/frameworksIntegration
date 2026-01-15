@@ -48,6 +48,11 @@
                     <span class="chat-header-email"><?= htmlspecialchars($this->other_user->user_email); ?></span>
                 </div>
             </div>
+            <div class="chat-header-actions">
+                <a href="<?= Config::get('URL'); ?>foodorder/index" class="btn-quick-order" title="Order Food">
+                    🍕 Quick Order
+                </a>
+            </div>
         </div>
 
         <!-- Chat Messages Area -->
@@ -245,11 +250,36 @@
     background: rgba(255, 255, 255, 0.95);
     padding: 16px 24px;
     border-bottom: 1px solid rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .chat-header-user {
     display: flex;
     align-items: center;
+}
+
+.chat-header-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-quick-order {
+    background: #28a745;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.btn-quick-order:hover {
+    background: #218838;
+    transform: translateY(-2px);
 }
 
 .chat-header-avatar {
